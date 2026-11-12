@@ -1,0 +1,26 @@
+[Unit]
+Description=Agente IA de atención al cliente por correo (24/7)
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=agente
+Group=agente
+WorkingDirectory=/opt/agente-email-ia
+EnvironmentFile=/opt/agente-email-ia/.env
+ExecStart=/opt/agente-email-ia/.venv/bin/agente-email
+Restart=always
+RestartSec=10
+TimeoutStopSec=30
+
+# Endurecimiento
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/agente-email-ia/data
+
+[Install]
+WantedBy=multi-user.target

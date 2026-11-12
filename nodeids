@@ -1,0 +1,9 @@
+[
+  "tests/test_core.py::test_auto_submitted_no_is_allowed",
+  "tests/test_core.py::test_extract_body_prefers_plain",
+  "tests/test_core.py::test_ignores_self_noreply_and_auto",
+  "tests/test_core.py::test_normal_customer_email_is_answered",
+  "tests/test_core.py::test_parse_model_output_json_and_fallback",
+  "tests/test_core.py::test_store_dedup_and_limits",
+  "tests/test_core.py::test_strip_quoted_history"
+]

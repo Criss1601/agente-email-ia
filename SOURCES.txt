@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/agente_email/__init__.py
+src/agente_email/ai.py
+src/agente_email/config.py
+src/agente_email/mailbox.py
+src/agente_email/main.py
+src/agente_email/safety.py
+src/agente_email/store.py
+src/agente_email_ia.egg-info/PKG-INFO
+src/agente_email_ia.egg-info/SOURCES.txt
+src/agente_email_ia.egg-info/dependency_links.txt
+src/agente_email_ia.egg-info/entry_points.txt
+src/agente_email_ia.egg-info/requires.txt
+src/agente_email_ia.egg-info/top_level.txt
+tests/test_core.py
